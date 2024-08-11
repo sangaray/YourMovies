@@ -5,25 +5,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Your Movies</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Ewert&family=Grenze+Gotisch:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Miltonian&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__logo">
-				<img src="./Images/yourMoviesLogo1.svg" alt="logo de Your Movies website" class="header__logo-image" />
+			<div class="header__nav-container">
+				<div class="header__nav-logo">
+					<img src="./Images/yourMoviesLogo1.svg" alt="logo de Your Movies website" class="header__logo-image" />
+				</div>
+				<nav class="header__navbar">
+					<ul class="header__navbar-ul">
+						<li class="header__navbar-item"><a href="#" class="header__navbar-link">Home</a></li>
+						<li class="header__navbar-item"><a href="#" class="header__navbar-link">Series</a></li>
+						<li class="header__navbar-item"><a href="#" class="header__navbar-link">Movies</a></li>
+						<li class="header__navbar-item"><a href="#" class="header__navbar-link">Latests</a></li>
+						<li class="header__navbar-item"><a href="#" class="header__navbar-link">My List</a></li>
+					</ul>
+				</nav>
+				<div class="header__search-bar">
+					<span class="header__search-bar-icon material-symbols-outlined">search</span>
+					<input class="header__search-bar-input" />
+				</div>
 			</div>
-			<nav class="header__navbar">
-				<ul class="header__navbar-ul">
-					<li class="header__navbar-item"><a href="#" class="header__navbar-item-link">Home</a></li>
-					<li class="header__navbar-item"><a href="#" class="header__navbar-item-link">Series</a></li>
-					<li class="header__navbar-item"><a href="#" class="header__navbar-item-link">Movies</a></li>
-					<li class="header__navbar-item"><a href="#" class="header__navbar-item-link">Latests</a></li>
-					<li class="header__navbar-item"><a href="#" class="header__navbar-item-link">My List</a></li>
-				</ul>
-			</nav>
-			<div class="header__search-bar">
-				<span class="header__search-bar-icon"></span>
-				Search
-				<input class="header__search-bar-bar" />
+			<div class="portada__container">
+				<h1 class="portada__titulo">Percy Jackson</h1>
+				<h2 class="portada__subtitulo">Y los Dioses del Olimpo</h2>
+				<p class="portada__descripción">
+					Percy Jackson debe devolver el rayo maestro de Zeus, evitar una guerra y descubrir su destino
+				</p>
 			</div>
 		</header>
 	</body>

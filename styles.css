@@ -1,5 +1,4 @@
 /* Reseteo y Configuración Inicial de Propiedades */
-
 * {
 	box-sizing: border-box;
 	background-color: #111;
@@ -192,8 +191,8 @@ p {
 .button__list,
 .button__trailer {
 	width: 150px;
-	padding: 10px 20px;
-	font-size: 1.2rem;
+	padding: 7px 12px;
+	font-size: 1.1rem;
 	color: #f0ffff;
 	border-radius: 10px;
 }
@@ -216,4 +215,5 @@ p {
 .icon {
 	transform: scale(2);
 	color: #f0ffff;
+	background-color: transparent;
 }

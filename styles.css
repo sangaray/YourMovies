@@ -6,7 +6,7 @@
 }
 
 /* prettier-ignore */
-body, header, div, img, ul, li, nav, h1, h2, span{
+body, header, div, img, ul, li, nav, h1, h2, span, button{
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -116,7 +116,6 @@ body {
 	background-image: url("./Images/scale.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-top: 5px;
 	z-index: 10;
 	display: flex;
 	flex-direction: column;
@@ -124,23 +123,96 @@ body {
 	justify-content: center;
 }
 
-.portada__titulo,
-.portada__subtitulo {
-	width: 500px;
-	background: linear-gradient(to right, #bcf5f5, #96bbf7);
-	background-clip: text;
-	color: transparent;
-	text-align: center;
-	margin: 0 20px;
-	font-family: lora;
+.titulos__container {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5px;
 }
 
-.portada__descripción {
+h1,
+h2 {
+	background: linear-gradient(to right, #ccc, #777);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: lora;
+	text-transform: uppercase;
+}
+
+.titulos__container,
+.portada__titulo,
+.portada__subtitulo,
+.portada__descripcion {
+	background-color: transparent;
+}
+
+h1 {
+	font-size: 2.7rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
 	width: 600px;
 	z-index: 20;
-	text-align: center;
 	color: #f0ffff;
 	width: 400px;
-	margin-left: 70px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	background-color: transparent;
+	text-align: center;
+}
+
+.button__container {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttons {
+	margin: 30px;
+}
+
+.button,
+.buttons {
+	background-color: transparent;
+}
+
+.button__play,
+.button__list,
+.button__trailer {
+	width: 150px;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	color: #f0ffff;
+	border-radius: 10px;
+}
+
+.button__play {
+	background-color: #f00;
+	margin-right: 8px;
+}
+
+.button__list,
+.button__trailer {
+	background-color: #111;
+}
+
+.icon1 {
+	padding: 10px 30px;
+}
+
+.icon {
+	transform: scale(2);
+	color: #f0ffff;
 }

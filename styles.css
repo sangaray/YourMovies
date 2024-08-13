@@ -160,18 +160,23 @@ h2 {
 
 p {
 	width: 600px;
-	z-index: 30;
 	color: #f0ffff;
 	width: 400px;
 	font-size: 1.2rem;
-	background-color: transparent;
 	text-align: center;
 }
 
 /* Estilando los Botones */
+.button__container,
+.button,
+.buttons,
+.icon1,
+.icon,
+p {
+	background-color: transparent;
+}
 
 .button__container {
-	background-color: transparent;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -187,11 +192,6 @@ p {
 
 .buttons {
 	margin: 30px;
-}
-
-.button,
-.buttons {
-	background-color: transparent;
 }
 
 .button__play,
@@ -217,13 +217,11 @@ p {
 
 .icon1 {
 	padding: 10px 30px;
-	background-color: transparent;
 }
 
 .icon {
 	transform: scale(2);
 	color: #f0ffff;
-	background-color: transparent;
 }
 
 .overlay {
